@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Container from './Container';
+import MegaMenu from './MegaMenu';
 
 import logo from '../assets/logoipsum.svg';
 import UserProfile from './UserProfile';
@@ -20,6 +21,10 @@ const Navigation = () => {
           <Link className="logo__link" to={'/'}>
             <img src={logo} />
           </Link>
+
+          <div className="hidden md:block">
+            <MegaMenu />
+          </div>
 
           <UserProfile />
         </div>
